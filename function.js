@@ -1,9 +1,10 @@
 export const compareNumber = (userGuess, correctNumber) => {
-    if (userGuess === correctNumber) {
+    const sanitizedUserGuess = Number(userGuess)
+    if (sanitizedUserGuess === correctNumber) {
         return 0;
-    } else if (userGuess < correctNumber) {
+    } else if (sanitizedUserGuess < correctNumber) {
         return -1;
-    } else {
+    } else if (sanitizedUserGuess > correctNumber) {
         return 1;
     }
 } 
