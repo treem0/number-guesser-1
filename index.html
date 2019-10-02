@@ -6,12 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Number Guesser</title>
 </head>
 
 <body>
+<header><h1>Guess a number</h1></header>
+
+<section class="instructions"> <!--These are the instructions-->
+    <p>Choose a number between 1 and 10. You have three tries to guess the number correctly!</p>
+</section>
+
+<input type='number'> <!--Ths is where the number goes-->
+
+</input>
+
+<button class='submitButton'>Guess!</button> <!--This is the submit button-->
+<br>
+<span class='triesRemaining'>Tries remaining:</span> <!--This is the number of tries remaining-->
+<br>
+<span class="guessFeedback">Your guess was:</span> <!--This is the high/low feedback-->
+<br>
+<span class="winLoseResult">You:</span> <!--This is the win/lose result-->
 
     <script src="app.js"></script>
+    <script src="function.js"></script>
 </body>
 
 </html>
