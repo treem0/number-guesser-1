@@ -16,20 +16,17 @@
     <p>Choose a number between 1 and 10. You have three tries to guess the number correctly!</p>
 </section>
 
-<input type='number'> <!--Ths is where the number goes-->
+<input type='number' id="userGuess"> <!--This is where the number goes-->
 
 </input>
 
-<button class='submitButton'>Guess!</button> <!--This is the submit button-->
-<br>
-<span class='triesRemaining'>Tries remaining:</span> <!--This is the number of tries remaining-->
-<br>
-<span class="guessFeedback">Your guess was:</span> <!--This is the high/low feedback-->
-<br>
-<span class="winLoseResult">You:</span> <!--This is the win/lose result-->
+<button id='submitButton'>Guess!</button> <!--This is the submit button-->
+<aside>Tries remaining: <span id='triesRemaining'></span></aside> <!--This is the number of tries remaining-->
+<p>Your guess was: <span id="guessFeedback"></span></p> <!--This is the high/low feedback-->
+<p>You: <span id="winLoseResult"></span></p> <!--This is the win/lose result-->
 
-    <script src="app.js"></script>
-    <script src="function.js"></script>
+    <script type="module" src="app.js"></script>
+    <script type="module" src="function.js"></script>
 </body>
 
 </html>
