@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Number Guesser</title>
 </head>
+
 <body>
-    
+<header><h1>Guess a number</h1></header>
+
+<section class="instructions"> <!--These are the instructions-->
+    <p>Choose a number between 1 and 20. 
+    <br>You have three tries to guess the number correctly!</p>
+</section>
+
+<input type='number' id="userGuess"> <!--This is where the userGuess goes-->
+
+</input>
+
+<button id='submitButton'>Guess!</button> <!--This is the submit button-->
+<br>
+<br>
+<aside>Tries remaining: <span id='triesRemaining'></span></aside> <!--This is the number of tries remaining-->
+<p>Your guess was: <span id="guessFeedback"></span></p> <!--This is the high/low feedback-->
+<p><span id="winLoseResult"></span></p> <!--This is the win/lose result-->
+<p id="actualNumberPrompt" class="hidden">The actual number was: <span id="actualNumber" class="hidden"></span></p>
+
+    <script type="module" src="app.js"></script>
+    <script type="module" src="function.js"></script>
 </body>
+
 </html>

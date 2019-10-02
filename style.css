@@ -1,0 +1,14 @@
+body {
+ background-color: #ACA885;
+ color: #626C66;
+}
+
+button {
+ background-color: #434A42;
+ color: #E1CA96;
+ border: 2px #918B76 solid;
+}
+
+.hidden {
+    display: none;
+}
