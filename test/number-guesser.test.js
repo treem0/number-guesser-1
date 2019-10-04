@@ -23,15 +23,15 @@ test('should return -1', function(assert) {
 test('should return 1', function(assert) {
         //Arrange
         // Set up your parameters and expectations
-        const correctNumber = 7;
-        const userGuess = 8;
-        const expected = 1;
+    const correctNumber = 7;
+    const userGuess = 8;
+    const expected = 1;
         //Act 
         // Call the function you're testing and set the result to a const
-        const result = compareNumber(userGuess, correctNumber);
+    const result = compareNumber(userGuess, correctNumber);
         //Assert
         // Make assertions about what is expected valid result
-        assert.equal(result, expected);
+    assert.equal(result, expected);
 
 });
 
